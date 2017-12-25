@@ -18,6 +18,9 @@ ul li {
 img {
   max-width: 100%; }
 
+body {
+  font-family: "Museo Sans Cyrl", sans-serif; }
+
 .wrapper {
   overflow: hidden;
   display: flex;
@@ -25,6 +28,49 @@ img {
 
 .container {
   max-width: 1260px;
-  padding: 0 15px; }
+  padding: 0 15px;
+  margin: 0 auto; }
+
+header,
+.advantages-screen,
+.doctors-screen,
+footer {
+  background-color: #2d71cb;
+  color: white; }
+
+.services-screen,
+.about-screen,
+.contacts-screen {
+  background-color: #f8f8f8;
+  color: #2d70ca; }
+
+.advantages {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-around; }
+
+.advantage-block {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.advantage-text {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 12px; }
+
+@media (max-width: 650px) {
+  .advantages {
+    flex-wrap: wrap;
+    padding: 50px 0 0 0; }
+
+  .advantage-block {
+    width: 50%;
+    margin-bottom: 50px; } }
+@media (max-width: 400px) {
+  .advantage-block {
+    width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */

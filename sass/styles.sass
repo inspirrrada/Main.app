@@ -31,7 +31,11 @@ body
   padding: 0 15px
   margin: 0 auto
 
-header,
+header
+  background: url("../img/header-bg.jpg") no-repeat
+  background-position: center
+  background-size: cover
+
 .advantages-screen,
 .doctors-screen,
 footer
@@ -43,6 +47,112 @@ footer
 .contacts-screen
   background-color: #f8f8f8
   color: #2d70ca
+
+.header
+  display: flex
+  flex-direction: column
+
+.header-top
+  padding-top: 19px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.logo
+  width: 20%
+
+.header-main
+  display: flex
+  flex-direction: column
+  margin-top: 6% //65px
+  margin-bottom: 6%
+  h1
+    font-size: 50px
+    line-height: 50px
+    font-weight: 100
+    color: white
+    max-width: 600px
+    margin-bottom: 15px
+  p
+    font-size: 16px
+    line-height: 20px
+    font-weight: 100
+    color: white
+    max-width: 455px
+    margin-bottom: 25px
+  button
+    width: 170px
+    padding: 15px 0
+    font-size: 12px
+    font-weight: 700
+    color: white
+    letter-spacing: 0.06em
+    text-transform: uppercase
+    background-color: #1dd0f9
+    border: none
+    border-radius: 5px
+    &:hover
+      cursor: pointer
+      background-color: #1bbce1
+
+nav
+  display: flex
+  justify-content: space-between
+  width: 48%
+
+.menu-link
+  font-size: 10px
+  line-height: 50px
+  font-weight: 700
+  color: white
+  text-transform: uppercase
+  letter-spacing: 0.05em
+  //padding: 0 15px
+  &:hover
+    text-decoration: underline
+
+.yellow-txt
+  color: #ffd200
+
+.icons
+  //line-height: 60px
+  width: 15%
+  display: flex
+  justify-content: space-evenly
+  align-items: center
+  margin-left: 2%
+  line-height: 60px
+  input
+    width: 110px
+    border: none
+    border-radius: 15px
+    background-color: #2d70ca
+    padding: 0 10px
+    color: white
+    opacity: 0
+    height: 20px
+    &:hover,
+    &:focus
+      opacity: 1
+
+.contacts
+  width: 15%
+  text-align: right
+
+.phone
+  font-size: 14px
+  line-height: 20px
+  font-weight: 100
+  color: white
+  letter-spacing: 0.05em
+  border-bottom: 1px dashed white
+  display: inline-flex
+  vertical-align: top
+  &:hover
+    cursor: pointer
+    color: #2d70ca
+    border-bottom: 1px dashed #2d70ca
+    font-weight: 300
 
 .advantages
   padding: 100px 0
@@ -63,7 +173,77 @@ footer
   margin-top: 12px
 
 
+@media (max-width: 1200px)
+  .logo
+    width: 15%
+
+  nav
+    width: 58%
+
+@media (max-width: 990px)
+  .logo
+    width: 10%
+
+  nav
+    width: 65%
+
+  .icons
+    input,
+    label
+      display: none
+
+  .contacts
+    text-align: left
+
+  .phone
+    font-size: 12px
+
+  .icons
+    width: auto
+    margin-left: 0
+
+  .header-main
+    margin-right: auto
+    margin-left: auto
+
+@media (max-width: 750px)
+  nav
+    flex-wrap: wrap
+    justify-content: flex-start
+
+  .menu-link
+    line-height: 25px
+    width: 30%
+    text-align: center
+
+  .contacts
+    width: auto
+
+  .header-main
+    text-align: center
+    h1
+      max-width: 100%
+      font-size: 40px
+    p
+      max-width: 100%
+    button
+      margin: auto
+
+
+
 @media (max-width: 650px)
+
+  .menu-link
+    width: 50%
+
+  .contacts
+    display: none
+
+  .header-main
+    h1
+      font-size: 35px
+      line-height: 40px
+
   .advantages
     flex-wrap: wrap
     padding: 50px 0 0 0
@@ -73,5 +253,9 @@ footer
     margin-bottom: 50px
 
 @media (max-width: 400px)
+
+  .menu-link
+    width: 100%
+
   .advantage-block
     width: 100%

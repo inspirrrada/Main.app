@@ -383,7 +383,8 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  color: white; }
 
 .copyright {
   margin-left: 11%; }

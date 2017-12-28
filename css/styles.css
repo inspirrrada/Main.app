@@ -306,7 +306,7 @@ nav {
   font-size: 18px;
   font-weight: 300;
   color: white;
-  min-height: 44px; }
+  min-height: 50px; }
 
 .doctor-profession {
   font-size: 16px;
@@ -536,6 +536,9 @@ nav {
     width: 50%;
     margin-bottom: 50px; }
 
+  .doctors-screen h2 {
+    font-size: 35px; }
+
   .author {
     display: none; }
 
@@ -555,12 +558,21 @@ nav {
   .cooperation-block {
     text-align: center; }
     .cooperation-block h2 {
-      font-size: 30px; } }
+      font-size: 30px; }
+
+  .doctors-screen h2 {
+    font-size: 30px; } }
+@media (max-width: 500px) {
+  .logo {
+    width: 15%; } }
 @media (max-width: 400px) {
   .menu-link {
     width: 100%; }
 
   .advantage-block {
-    width: 100%; } }
+    width: 100%; }
+
+  .logo {
+    width: 20%; } }
 
 /*# sourceMappingURL=styles.css.map */

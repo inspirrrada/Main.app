@@ -256,6 +256,25 @@
 							<div class="doctor-profession">Акушер-гінеколог</div>
 						</div>
 					</div>
+					<div class="doctor-block">
+						<div class="doctor-img">
+							<img src="img/docror_01.png" alt="Doctor Photo">
+						</div>
+						<div class="doctor-text">
+							<div class="doctor-name">Мельник Алла Дмитрівна</div>
+							<div class="doctor-profession">Акушер-гінеколог</div>
+						</div>
+					</div>
+					<div class="doctor-block">
+						<div class="doctor-img">
+							<img src="img/docror_02.png" alt="Doctor Photo">
+						</div>
+						<div class="doctor-text">
+							<div class="doctor-name">Логінова Тетяна Октавіанівна</div>
+							<div class="doctor-profession">Лікар-лаборант</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -263,9 +282,9 @@
 			<div class="container">
 				<div class="contact-content">
 					<div class="cooperation-block">
-						<h2>Якщо ви лікар і
+						<h2>Якщо ви лікар і <br>
 							бажаєте співпрацювати</h2>
-						<p>Впродовж 10 - ти років наша клініка співпрацює з найкращими лікарями різних спеціальностей.
+						<p>Впродовж 10 - ти років наша клініка співпрацює з найкращими лікарями різних спеціальностей. <br>
 							Сучасні технології дозволяють співпрацювати з висококваліфіковаими фахівцями, що ще більше покращує якість та збільшує тривалості життя людей, шляхом забезпечення доступних лікарських препаратів і обладнання. </p>
 						<button>Працювати з нами</button>
 					</div>
@@ -319,18 +338,23 @@
 <script>
     $(document).ready(function(){
         $('.doctors').slick({
-            setting-name: setting-value
-    });
+            infinite: true,
+            dots: true,
+            slidesToShow: 4,
+            slidesToScroll: 1
+      });
+
+//        $('.autoplay').slick({
+//            slidesToShow: 4,
+//            slidesToScroll: 4,
+//            autoplay: true,
+//            autoplaySpeed: 2000
+//        });
     });
 </script>
 
 <script>
-    $('.autoplay').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    });
+
 </script>
 
 

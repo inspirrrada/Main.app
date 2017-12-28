@@ -36,11 +36,14 @@ header {
   background-position: center;
   background-size: cover; }
 
-.advantages-screen,
-.doctors-screen,
-footer {
+.advantages-screen {
   background-color: #2d71cb;
   color: white; }
+
+.doctors-screen,
+footer {
+  background: url("../img/bg-img-blue.jpg") no-repeat;
+  background-size: cover; }
 
 .services-screen,
 .about-screen,
@@ -274,7 +277,7 @@ nav {
       background-color: #c2ecf6; }
 
 .doctors-screen {
-  padding: 55px 0; }
+  padding: 55px 0 90px 0; }
   .doctors-screen h2 {
     font-size: 40px;
     font-weight: 300;
@@ -291,18 +294,89 @@ nav {
   .doctors .doctor-block {
     text-align: center; }
 
+.doctor-name:nth-child(3) {
+  margin-bottom: 0; }
+
 .doctor-img {
   margin-bottom: 25px; }
+  .doctor-img img {
+    margin: auto; }
 
 .doctor-name {
   font-size: 18px;
   font-weight: 300;
-  margin-bottom: 20px; }
+  color: white;
+  min-height: 44px; }
 
 .doctor-profession {
   font-size: 16px;
   font-weight: 100;
-  letter-spacing: -0.025em; }
+  letter-spacing: -0.025em;
+  color: white; }
+
+.contacts-screen {
+  padding: 63px 0; }
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.cooperation-block {
+  width: 74%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 50px 50px; }
+  .cooperation-block h2 {
+    font-size: 40px;
+    font-weight: 100;
+    color: #2d70ca;
+    margin-bottom: 30px; }
+  .cooperation-block p {
+    color: black;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 40px; }
+  .cooperation-block button {
+    font-size: 12px;
+    line-height: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    background-color: transparent;
+    border: 1px solid #2d70ca;
+    border-radius: 5px;
+    width: 200px;
+    color: #2d70ca; }
+    .cooperation-block button:hover {
+      cursor: pointer;
+      background-color: #c2ecf6; }
+
+.contacts-block {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .contacts-block button {
+    font-size: 12px;
+    line-height: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    background-color: transparent;
+    border: 1px solid #2d70ca;
+    border-radius: 5px;
+    width: 253px;
+    color: #2d70ca;
+    margin-top: 23px; }
+    .contacts-block button:hover {
+      cursor: pointer;
+      background-color: #c2ecf6; }
+
+.contact-info {
+  margin-bottom: 12px; }
+  .contact-info img {
+    vertical-align: middle; }
 
 .footer-block {
   padding: 20px 0;
@@ -347,6 +421,13 @@ nav {
     max-width: 1260px;
     padding: 0 15px;
     margin: 0 auto; }
+
+  .cooperation-block {
+    width: 58%;
+    padding: 50px 20px; }
+
+  .contacts-block {
+    width: 40%; }
 
   .copyright {
     margin-left: 0; }
@@ -410,7 +491,23 @@ nav {
     font-size: 35px; }
 
   .about-text h2 {
-    font-size: 35px; } }
+    font-size: 35px; }
+
+  .cooperation-block {
+    width: 100%;
+    margin-bottom: 50px; }
+    .cooperation-block h2 {
+      font-size: 35px; }
+
+  .contacts-block {
+    width: 100%;
+    text-align: center; }
+    .contacts-block button {
+      margin: auto;
+      width: 200px; }
+
+  .contact-text {
+    font-size: 14px; } }
 @media (max-width: 650px) {
   .menu-link {
     width: 50%; }
@@ -452,7 +549,12 @@ nav {
     justify-content: center;
     width: auto; }
     .contacts-footer a {
-      margin-left: 3%; } }
+      margin-left: 3%; }
+
+  .cooperation-block {
+    text-align: center; }
+    .cooperation-block h2 {
+      font-size: 30px; } }
 @media (max-width: 400px) {
   .menu-link {
     width: 100%; }

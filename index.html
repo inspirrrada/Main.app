@@ -4,6 +4,8 @@
 	<title>Title</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="slick-1.8.0/slick/slick.css">
+	<link rel="stylesheet" href="slick-1.8.0/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
@@ -216,6 +218,7 @@
 		</div>
 		<div class="doctors-screen">
 			<div class="container">
+				<h2>Наші Спеціалісти</h2>
 				<div class="doctors">
 					<div class="doctor-block">
 						<div class="doctor-img">
@@ -290,7 +293,7 @@
 			<div class="footer-block">
 				<div class="copyright">
 					<img src="img/logo-footer.png" alt="Logo">
-					<span>Copyright &copy; 2017</span>
+					<div>Copyright &copy; 2017</div>
 				</div>
 				<div class="contacts-footer">
 					<a href="https://twitter.com/">
@@ -310,5 +313,26 @@
 		</div>
 	</footer>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="slick-1.8.0/slick/slick.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.doctors').slick({
+            setting-name: setting-value
+    });
+    });
+</script>
+
+<script>
+    $('.autoplay').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+</script>
+
+
 </body>
 </html>

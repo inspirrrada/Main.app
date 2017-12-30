@@ -98,23 +98,27 @@ footer
       cursor: pointer
       background-color: #1bbce1
 
-nav
+.main-menu
   display: flex
   justify-content: space-between
   width: 48%
-  .main-menu
-    display: flex
-    justify-content: space-between
-    width: 100%
+  //.main-menu
+  //  display: flex
+  //  justify-content: space-between
+  //  width: 100%
+
+//.main-menu li
+//  margin-right: 1%
 
 .menu-link
   font-size: 10px
-  line-height: 50px
+  line-height: 25px
   font-weight: 700
   color: white
   text-transform: uppercase
   letter-spacing: 0.05em
   position: relative
+  display: block
   //padding: 0 15px
   &:hover
     text-decoration: underline
@@ -124,12 +128,11 @@ nav
   top: 65px
   //left: 285px
   display: none
+  z-index: 2
 
 
 //.sub-menu-2
 //  position: absolute
-
-
 
 .submenu-link
   background-color: #2d70ca
@@ -144,7 +147,7 @@ nav
   padding: 10px 5px
   border-bottom: 1px solid #2459a0
 
-nav li:hover .sub-menu
+.main-menu li:hover .sub-menu
   display: block
 
 .yellow-txt
@@ -449,7 +452,7 @@ nav li:hover .sub-menu
   .logo
     width: 15%
 
-  nav
+  .main-menu
     width: 58%
 
   .services
@@ -486,8 +489,8 @@ nav li:hover .sub-menu
   .logo
     width: 10%
 
-  nav
-    width: 65%
+  .main-menu
+    width: 70%
 
   .icons
     input,
@@ -513,18 +516,22 @@ nav li:hover .sub-menu
       text-align: center
 
 
-
-
-
 @media (max-width: 750px)
-  nav
+  .main-menu
     flex-wrap: wrap
     justify-content: flex-start
 
-  .menu-link
-    line-height: 25px
+  .main-menu > li
+    //line-height: 25px
     width: 30%
     text-align: center
+
+  .sub-menu
+    position: absolute
+    top: 50px
+    //left: 285px
+    display: none
+    z-index: 2
 
   .contacts
     width: auto
@@ -567,8 +574,16 @@ nav li:hover .sub-menu
 
 @media (max-width: 650px)
 
-  .menu-link
+  .main-menu > li
     width: 50%
+
+  .sub-menu
+    top: 40px
+    left: 28%
+
+  .sub-menu-2
+    top: 70px
+    left: 24%
 
   .contacts
     display: none
@@ -632,7 +647,7 @@ nav li:hover .sub-menu
 
 @media (max-width: 400px)
 
-  .menu-link
+  .main-menu li
     width: 100%
 
   .advantage-block
@@ -640,3 +655,10 @@ nav li:hover .sub-menu
 
   .logo
     width: 20%
+
+  .sub-menu
+    left: 43%
+
+  .sub-menu-2
+    top: 90px
+    left: 33%

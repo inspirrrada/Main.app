@@ -102,6 +102,10 @@ nav
   display: flex
   justify-content: space-between
   width: 48%
+  .main-menu
+    display: flex
+    justify-content: space-between
+    width: 100%
 
 .menu-link
   font-size: 10px
@@ -110,9 +114,38 @@ nav
   color: white
   text-transform: uppercase
   letter-spacing: 0.05em
+  position: relative
   //padding: 0 15px
   &:hover
     text-decoration: underline
+
+.sub-menu
+  position: absolute
+  top: 65px
+  //left: 285px
+  display: none
+
+
+//.sub-menu-2
+//  position: absolute
+
+
+
+.submenu-link
+  background-color: #2d70ca
+  font-size: 10px
+  //line-height: 50px
+  font-weight: 700
+  color: white
+  //text-transform: uppercase
+  letter-spacing: 0.05em
+  top: 5px
+  display: block
+  padding: 10px 5px
+  border-bottom: 1px solid #2459a0
+
+nav li:hover .sub-menu
+  display: block
 
 .yellow-txt
   color: #ffd200
